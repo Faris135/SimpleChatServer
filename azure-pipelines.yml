@@ -9,11 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-- group: Names
-- name: 'Name'
-  value: 'Ibro'
-
 steps:
 - task: NodeTool@0
   inputs:
@@ -28,7 +23,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Name)'
+    SourceFolder: '$(agent.builddirectory)'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     
