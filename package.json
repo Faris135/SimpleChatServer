@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
     "scripts": {
-        "build": "echo \"building....(not doing anything)\"",
+        "build": "echo \"building.... something here (not doing anything)\"",
         "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
