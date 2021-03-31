@@ -33,3 +33,7 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
+- task: "PublishBuildArtifacts@1"
+
+
+
