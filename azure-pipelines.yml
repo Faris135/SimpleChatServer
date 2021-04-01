@@ -33,12 +33,6 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1 (00410733-08fb-41ff-972e-80a9542dd44f)'
-    appType: 'webApp'
-    WebAppName: 'SimpleChat'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
 
 
